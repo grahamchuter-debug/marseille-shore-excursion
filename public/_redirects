@@ -1,0 +1,4 @@
+# Canonical domain: marseilleshoreexcursion.com (singular)
+https://www.marseilleshoreexcursion.com/* https://marseilleshoreexcursion.com/:splat 301
+http://www.marseilleshoreexcursion.com/* https://marseilleshoreexcursion.com/:splat 301
+http://marseilleshoreexcursion.com/* https://marseilleshoreexcursion.com/:splat 301

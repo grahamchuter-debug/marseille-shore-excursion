@@ -1,0 +1,30 @@
+{
+  "site": "marseilleshoreexcursion.com",
+  "generated": "2026-07-10T00:00:00.000Z",
+  "files": [
+    "hero-home.jpg",
+    "og-default.jpg",
+    "cruise-port.jpg",
+    "vieux-port.jpg",
+    "notre-dame.jpg",
+    "le-panier.jpg",
+    "mucem.jpg",
+    "corniche.jpg",
+    "calanques.jpg",
+    "aix.jpg",
+    "cassis.jpg",
+    "luberon.jpg",
+    "avignon.jpg",
+    "food.jpg",
+    "walking.jpg",
+    "markets.jpg",
+    "beaches.jpg",
+    "lavender.jpg",
+    "provence.jpg",
+    "compare.jpg",
+    "private.jpg",
+    "family.jpg",
+    "wine.jpg"
+  ],
+  "note": "Master images sourced from Wikimedia Commons (CC-licensed). See scripts/download-marseille-images.mjs."
+}

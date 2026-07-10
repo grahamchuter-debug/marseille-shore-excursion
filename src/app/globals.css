@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Deep Old Port navy */
+  --color-coastal-50: #f2f5f7;
+  --color-coastal-100: #dde5eb;
+  --color-coastal-200: #b8c8d4;
+  --color-coastal-300: #8aa3b6;
+  --color-coastal-400: #5d7f98;
+  --color-coastal-500: #3f647f;
+  --color-coastal-600: #314f66;
+  --color-coastal-700: #284053;
+  --color-coastal-800: #1c3142;
+  --color-coastal-900: #14283a;
+  /* Limestone cream / parchment */
+  --color-sandstone-300: #efe6d6;
+  --color-sandstone-400: #dbc7a6;
+  --color-sandstone-500: #c4a574;
+  /* Restrained Provençal blue-green for countryside */
+  --color-forest-50: #f3f6f4;
+  --color-forest-100: #e0e8e3;
+  --color-forest-600: #5a7368;
+  --color-forest-700: #475c53;
+  --color-forest-800: #364740;
+  /* Sun-warmed ochre + muted terracotta */
+  --color-maple-400: #d49a55;
+  --color-maple-500: #c4843c;
+  --color-maple-600: #a36a2e;
+  --color-autumn-300: #d4a574;
+  --color-autumn-400: #b8884f;
+  /* Provençal blue accent */
+  --color-tile-500: #4a7a9b;
+  --color-tile-600: #3a6280;
+  --font-sans: var(--font-source-sans);
+  --font-display: var(--font-fraunces);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-[#f7f3eb] text-gray-800 antialiased;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-image:
+    radial-gradient(ellipse at 0% 0%, rgba(20, 40, 58, 0.05) 0%, transparent 45%),
+    radial-gradient(ellipse at 100% 15%, rgba(196, 132, 60, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, #f7f3eb 0%, #f0e9dc 100%);
+}
+
+h1, h2, h3, h4 { font-family: var(--font-display), Georgia, serif; }
+
+.section-padding { @apply px-4 py-16 sm:px-6 lg:px-8 lg:py-20; }
+.container-wide { @apply mx-auto max-w-7xl; }
+.section-eyebrow { @apply text-sm font-medium tracking-wide text-coastal-600 uppercase; letter-spacing: 0.08em; }
+.section-title { @apply font-display text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl; }
+.section-subtitle { @apply mt-4 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg; }
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-coastal-800 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-coastal-900 focus:outline-none focus:ring-2 focus:ring-coastal-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-coastal-200 bg-white px-6 py-3.5 text-sm font-semibold text-coastal-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-coastal-300 hover:bg-coastal-50 focus:outline-none focus:ring-2 focus:ring-coastal-500 focus:ring-offset-2;
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center rounded-xl bg-maple-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-maple-400 focus:outline-none focus:ring-2 focus:ring-maple-400 focus:ring-offset-2;
+}
+
+.nav-card {
+  @apply relative block overflow-hidden rounded-2xl border border-gray-200/90 bg-white p-5 text-gray-900 shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg sm:p-6;
+}
+
+.nav-card::before {
+  content: "";
+  @apply pointer-events-none absolute inset-x-0 top-0 z-0 h-1;
+  background: linear-gradient(90deg, #14283a 0%, #c4843c 50%, #a36a2e 100%);
+}
+
+.nav-card > * { @apply relative z-[1]; }
+
+.card-editorial {
+  @apply overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-md transition-all duration-300 hover:shadow-lg;
+}
+
+.home-hero {
+  @apply relative overflow-hidden text-white pt-14 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-24;
+  min-height: 78vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.home-hero-heading {
+  @apply font-display text-4xl font-semibold leading-[1.06] sm:text-[2.75rem] lg:text-5xl max-w-4xl;
+}
+
+.hero-overlay {
+  @apply absolute inset-0;
+  background:
+    linear-gradient(180deg, rgba(15, 34, 52, 0.32) 0%, rgba(15, 34, 52, 0.55) 42%, rgba(15, 34, 52, 0.94) 100%),
+    linear-gradient(135deg, rgba(15, 34, 52, 0.7) 0%, rgba(168, 75, 61, 0.12) 55%, rgba(15, 34, 52, 0.8) 100%);
+}
+
+.card-feature {
+  @apply rounded-2xl border border-coastal-100 bg-gradient-to-br from-coastal-50/60 to-white p-6 sm:p-8;
+}
+
+.card-accent {
+  @apply rounded-2xl border border-sandstone-300/60 bg-gradient-to-br from-[#faf7f2] to-white p-6 sm:p-8;
+}
+
+.footer-depth {
+  background: linear-gradient(180deg, #0f2234 0%, #0b1a28 40%, #07131e 100%);
+}
+
+.placeholder-widget {
+  @apply rounded-xl border-2 border-dashed border-coastal-200 bg-coastal-50/50 p-6 text-center;
+}
+
+.placeholder-widget-label {
+  @apply text-xs font-semibold uppercase tracking-wider text-coastal-600;
+}
+
+.badge-editors-choice {
+  @apply inline-flex items-center rounded-full bg-maple-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-maple-600;
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-coastal-200 bg-coastal-50 px-3 py-1 text-xs font-medium text-coastal-800;
+}
+
+.prose-body {
+  @apply mt-6 space-y-4 text-base leading-relaxed text-gray-700;
+}
+
+.card-signature {
+  @apply rounded-2xl border border-sandstone-400/60 bg-gradient-to-br from-sandstone-300/25 to-white p-6 shadow-md sm:p-8;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
+.animate-fade-up-delay {
+  animation: fadeUp 0.7s ease-out 0.12s both;
+}
+.animate-fade-up-delay-2 {
+  animation: fadeUp 0.7s ease-out 0.24s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2 {
+    animation: none;
+  }
+}
