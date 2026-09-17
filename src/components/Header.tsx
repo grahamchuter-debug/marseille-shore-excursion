@@ -8,6 +8,7 @@ import { destinationIdentity } from "@/data/destination-identity";
 const navItems = [
   { href: "/shore-excursions", label: "Excursions" },
   { href: "/port-guide", label: "Port Guide" },
+  { href: "/ship-schedules", label: "Schedules" },
   { href: "/cruise-planner", label: "Plan" },
   { href: "/your-day-ashore", label: "Your Day Ashore" },
   { href: "/compare", label: "Compare" },

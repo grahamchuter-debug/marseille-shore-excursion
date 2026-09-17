@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-09-17T21:09:16.936Z",
+  "wave": "wave-1a",
+  "port": "marseille",
+  "displayName": "Marseille",
+  "portIdentityNote": "No invented terminal labels",
+  "minPublishRows": 15,
+  "counts": {
+    "2026": 355,
+    "2027": 372,
+    "2028_discovery": 311,
+    "2028_published": 0,
+    "public_total": 723
+  },
+  "partial2026": true,
+  "filter2028": {
+    "decision": "HOLD",
+    "reason": "validated 12 < MIN_PUBLISH_ROWS 15 — HOLD; restricted rows NOT reintroduced",
+    "validatedCount": 12
+  },
+  "timeCompleteness": {
+    "2026": {
+      "total": 355,
+      "arrival": 305,
+      "departure": 303,
+      "both": 303,
+      "neither": 50,
+      "pctBoth": 85.4
+    },
+    "2027": {
+      "total": 372,
+      "arrival": 310,
+      "departure": 304,
+      "both": 304,
+      "neither": 62,
+      "pctBoth": 81.7
+    },
+    "2028": {
+      "total": 0,
+      "arrival": 0,
+      "departure": 0,
+      "both": 0,
+      "neither": 0,
+      "pctBoth": 0
+    }
+  },
+  "berthPolicy": "unknown — no generic terminals",
+  "placeholderPurged": true
+}

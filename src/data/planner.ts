@@ -264,10 +264,21 @@ export const MARSEILLE_DAY_PLANS: Record<PlanKey, MarseilleDayPlan> = {
 };
 
 function usableHours(input: PlannerInput): number {
-  if (typeof input.hoursAshore === "number") return input.hoursAshore;
-  if (!input.arrivalTime || !input.departureTime) return 6.5;
-  const [arrivalHour, arrivalMinute] = input.arrivalTime.split(":").map(Number);
-  const [departureHour, departureMinute] = input.departureTime.split(":").map(Number);
+  if (typeof input.hoursAshore === "number" && input.hoursAshore > 0) return input.hoursAshore;
+  const arrival = (input.arrivalTime || "").trim();
+  const departure = (input.departureTime || "").trim();
+  if (
+    !arrival ||
+    !departure ||
+    arrival === "00:00" ||
+    arrival === "0:00" ||
+    departure === "00:00" ||
+    departure === "0:00"
+  ) {
+    return 0;
+  }
+  const [arrivalHour, arrivalMinute] = arrival.split(":").map(Number);
+  const [departureHour, departureMinute] = departure.split(":").map(Number);
   const elapsed = departureHour * 60 + departureMinute - arrivalHour * 60 - arrivalMinute;
   return Math.max(0, elapsed / 60 - 1.5);
 }

@@ -35,6 +35,7 @@ export function Footer() {
             <h3 className="mb-3 text-sm font-medium text-white/90">Plan your port day</h3>
             <ul className="space-y-1.5 text-sm text-coastal-100/70">
               <li><Link href="/cruise-planner" className="hover:text-white">Marseille Cruise Planner</Link></li>
+              <li><Link href="/ship-schedules/marseille" className="hover:text-white">Ship schedules</Link></li>
               <li><Link href="/port-guide" className="hover:text-white">Marseille Port Guide</Link></li>
               <li><Link href="/shore-excursions" className="hover:text-white">Shore Excursions</Link></li>
               <li><Link href="/guides" className="hover:text-white">Independent guides</Link></li>
