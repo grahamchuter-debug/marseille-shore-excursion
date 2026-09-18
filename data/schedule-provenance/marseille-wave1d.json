@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-09-18T07:43:29.274Z",
+  "wave": "wave-1d",
+  "port": "marseille",
+  "destSlug": "marseille",
+  "displayName": "Marseille",
+  "counts": {
+    "2026": 355,
+    "2027": 372,
+    "2028_discovery": 311,
+    "2028_published": 25,
+    "public_total": 748,
+    "h1_2026": 0
+  },
+  "partial2026": true,
+  "filter2028": {
+    "decision": "PUBLISH",
+    "reason": "validated 25 >= MIN_PUBLISH_ROWS 15 — publish validated only; held 286 restricted/unvalidated",
+    "validatedCount": 25,
+    "tier2PrincessKeys": 13
+  },
+  "timeCompleteness": {
+    "2026": {
+      "total": 355,
+      "arrival": 305,
+      "departure": 303,
+      "both": 303,
+      "neither": 50,
+      "pctBoth": 85.4
+    },
+    "2027": {
+      "total": 372,
+      "arrival": 310,
+      "departure": 304,
+      "both": 304,
+      "neither": 62,
+      "pctBoth": 81.7
+    },
+    "2028": {
+      "total": 25,
+      "arrival": 25,
+      "departure": 23,
+      "both": 23,
+      "neither": 0,
+      "pctBoth": 92
+    }
+  },
+  "contaminationPurged": [],
+  "wireSchedulesTs": null
+}
